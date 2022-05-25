@@ -6,7 +6,7 @@ Built in React Native with Expo. This app lets users choose from a variety of fo
 JavaScript
 
 ## Frameworks
-React Native
+React Native\
 Expo
 
 ## API
