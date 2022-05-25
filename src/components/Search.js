@@ -3,10 +3,20 @@ import {
     TextInput, 
     StyleSheet 
 } from "react-native";
+import { useState } from "react";
 import { FontAwesome } from "@expo/vector-icons";
 import { elevation } from "../common/styles";
 
-export default function Search() {
+export default function Search({ setTerm }) {
+
+    const [input, setInput] = useState("");
+
+    function handleEndEditing() {
+        if (!input) return;
+        setTerm(input);
+        setInput("")
+    };
+
     return (
         <View style={[styles.searchContainer, elevation]}>
             <FontAwesome 
@@ -16,6 +26,9 @@ export default function Search() {
             <TextInput
                 style={styles.input}
                 placeholder="Restaurants, food"
+                value={input}
+                onChangeText={(text) => {setInput(text)}}
+                onEndEditing={handleEndEditing}
             />
         </View>
     );

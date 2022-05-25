@@ -6,8 +6,8 @@ Built in React Native with Expo. This app lets users choose from a variety of fo
 JavaScript
 
 ## Frameworks
-React Native\
-Expo
+[React Native](https://reactnative.dev/)\
+[Expo](https://docs.expo.dev/)
 
 ## API
 [Yelp Fusion](https://www.yelp.com/developers/documentation/v3/get_started)

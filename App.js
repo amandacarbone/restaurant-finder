@@ -9,6 +9,8 @@ import Search from './src/components/Search';
 
 export default function App() {
 
+  const [term, setTerm] = useState("Burger");
+
   const commonCategories = [
     {
       name: "Burger",
@@ -39,11 +41,19 @@ export default function App() {
   return (
     <View>
       <Header/>
-      <Search/>
+      <Search
+        setTerm={setTerm}
+      />
       <FlatList
         data={commonCategories}
         renderItem={({ item, index }) => {
-          return <CategoryItem name={item.name} imageUrl={item.imageUrl} index={index}/>
+          return <CategoryItem 
+                    name={item.name} 
+                    imageUrl={item.imageUrl} 
+                    index={index}
+                    active={item.name === term}
+                    handlePress={() => setTerm(item.name)}
+                  />
         }}
         horizontal
         showsHorizontalScrollIndicator={false}
