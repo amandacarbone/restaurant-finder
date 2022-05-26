@@ -18,7 +18,7 @@ export default function Search({ setTerm }) {
     };
 
     return (
-        <View style={[styles.searchContainer, elevation]}>
+        <View style={[styles.container, elevation]}>
             <FontAwesome 
                 name="search"
                 size={25}
@@ -35,7 +35,7 @@ export default function Search({ setTerm }) {
 };
 
 const styles = StyleSheet.create({
-    searchContainer: {
+    container: {
         flexDirection: "row",
         marginTop: 5,
         marginHorizontal: 25,

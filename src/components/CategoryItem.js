@@ -17,15 +17,15 @@ export default function CategoryItem({
     return (
         <TouchableOpacity onPress={handlePress}>
             <View style={[
-                styles.categoryContainer, 
+                styles.container, 
                 elevation, 
-                index === 0 ? { marginLeft: 25 } : { marginLeft: 15 },
-                active ? { backgroundColor: "gold" } : { backgroundColor: "white" }
+                index === 0 ? { marginLeft: 20 } : { marginLeft: 15 },
+                active ? { backgroundColor: "pink" } : { backgroundColor: "white" }
             ]}>
                 <View style={styles.iconContainer}>
                     <Image 
                         source={imageUrl}
-                        style={styles.categoryIcon}
+                        style={styles.icon}
                     />
                 </View>
                 <Text>{name}</Text>
@@ -35,7 +35,7 @@ export default function CategoryItem({
 };
 
 const styles = StyleSheet.create({
-    categoryContainer: {
+    container: {
         width: 70,
         height: 100,
         borderRadius: 50,
@@ -45,9 +45,10 @@ const styles = StyleSheet.create({
         justifyContent: "center"
     },
     elevation,
-    categoryIcon: {
+    icon: {
         width: 35,
         height: 35,
+        backgroundColor: "white"
     },
     iconContainer: {
         width: 50,
