@@ -8,11 +8,8 @@ https://user-images.githubusercontent.com/90805644/171510660-ca899a15-f6c5-4822-
 JavaScript
 
 ## Frameworks
-[React Native](https://reactnative.dev/)\
-[Expo](https://docs.expo.dev/)
+React Native\
+Expo
 
 ## API
-[Yelp Fusion](https://www.yelp.com/developers/documentation/v3/get_started)
-
-## Contributors
-[Amanda Carbone](https://github.com/amandacarbone)
+Yelp Fusion
